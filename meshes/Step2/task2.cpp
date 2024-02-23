@@ -9,7 +9,7 @@ int main(int argc, char **argv)
     gmsh::model::add("chess_figure");
 
     try {
-        gmsh::merge("../PI3-011.stl");
+        gmsh::merge("../Step2/PI3-011.stl");
     } catch(...) {
         gmsh::logger::write("Could not load STL mesh: bye!");
         gmsh::finalize();

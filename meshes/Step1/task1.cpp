@@ -9,7 +9,7 @@ int main(int argc, char **argv)
     gmsh::model::add("bublik");
 
     try {
-        gmsh::merge("../tor.stl");
+        gmsh::merge("../Step1/tor.stl");
     } catch(...) {
         gmsh::logger::write("Could not load STL mesh: bye!");
         gmsh::finalize();
